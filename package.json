@@ -1,16 +1,21 @@
 {
-  "name": "",
+  "name": "AstroTinaut",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
+    "dev": "tinacms dev -c \"astro dev\"",
+    "build": "tinacms build --partial-reindex && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.3",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.4",
+    "tinacms": "^2.7.5"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.9.5",
+    "@types/node": "^22.14.1"
   }
 }
